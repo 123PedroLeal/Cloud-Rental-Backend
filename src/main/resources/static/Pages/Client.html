@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="/Scripts/ScriptClient.js"></script>
+
+<body>
+
+    <h1>Clientes</h1>
+    <form>
+    <input type="number" id="IdClient" placeholder="Id del Cliente" style="width : 390px; height : 15px"><br>
+    <input type="text" id="name" placeholder="Nombre del Cliente" style="width : 390px; height : 15px"><br>
+    <input type="text" id="email" placeholder="Email del Cliente" style="width : 390px; height : 15px"><br>
+    <input type="text" id="password" placeholder="Contraseña del Cliente" style="width : 390px; height : 15px"><br>
+    <input type="number" id="age" placeholder="Edad del Cliente" style="width : 390px; height : 15px"><br>
+    </form>
+
+    <button onclick="ReadClient()"style="width : 130px; height : 20px">Traer Clientes </button>
+    <button onclick="SaveClient()"style="width : 130px; height : 20px">Guardar Cliente</button>
+    <button onclick="EditClient()"style="width : 130px; height : 20px">Actualizar Cliente</button>
+
+    <div id = "ListaClientes"></div>
+
+    <hr>
+
+    <a href="/index.html">Volver al inicio</a>
+
+</body>
+</html>

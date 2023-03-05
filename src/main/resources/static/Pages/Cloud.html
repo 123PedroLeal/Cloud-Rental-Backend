@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nubes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/ScriptCloud.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <form class="form">
+            <h1>Nubes</h1>
+
+            <input type="number" id="IdNube" placeholder="Id de la Nube" style="width : 390px; height : 15px"><br>
+            <input type="text" id="Brand" placeholder="Marca de la Nube" style="width : 390px; height : 15px"><br>
+            <input type="number" id="Year" placeholder="Año de la Nube" style="width : 390px; height : 15px"><br>
+            <input type="number" id="Category" placeholder="Número de Categoria de la Nube" style="width : 390px; height : 15px"><br>
+            <input type="text" id="Name" placeholder="Nombre de la Nube" style="width : 390px; height : 15px"><br>
+            <input type="text" id="Description" placeholder="Descripción de la Nube" style="width : 390px; height : 15px"><br>
+
+            <button onclick="ReadCloud()"style="width : 130px; height : 20px">Traer Nubes </button>
+            <button onclick="SaveCloud()"style="width : 130px; height : 20px">Guardar Nube</button>
+            <button onclick="EditCloud()"style="width : 130px; height : 20px">Actualizar Nube</button>
+
+            <div id = "ListaNubes"></div>
+
+            <hr>
+        </form>
+    </div>
+
+
+
+
+    <a href="/index.html">Volver al inicio</a>
+
+</body>
+</html>

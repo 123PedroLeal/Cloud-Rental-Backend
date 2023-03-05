@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorias</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="../Scripts/ScriptCategory.js"></script>
+
+<body>
+
+    <h1>Categorias</h1>
+    <form>
+        <input type="number" id="IdCategory" placeholder="Id de la Categoria" style="width : 390px; height : 15px"><br>
+        <input type="text" id="Name" placeholder="Nombre de la Categoria" style="width : 390px; height : 15px"><br>
+        <input type="text" id="Description" placeholder="Descripción de la Categoria" style="width : 390px; height : 15px"><br>
+    </form>
+
+    <button onclick="ReadCategory()"style="width : 130px; height : 20px">Traer Categorias </button>
+    <button onclick="SaveCategory()"style="width : 130px; height : 20px">Guardar Categoria</button>
+    <button onclick="EditCategory()"style="width : 130px; height : 20px">Actualizar Categoria</button>
+
+    <div id = "ListaCategorias"></div>
+
+    <hr>
+
+    <a href="/index.html">Volver al inicio</a>
+</body>
+</html>

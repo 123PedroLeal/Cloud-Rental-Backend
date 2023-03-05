@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calificaciones</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="/Scripts/ScriptScore.js"></script>
+
+<body>
+
+    <h1>Calificaciones</h1>
+
+    <form>
+
+        <input type="number" id="idScore" placeholder="IdCalificacion" style="width : 390px; height : 15px"><br>
+        <input type="number" id="Score" placeholder="(1-5) Calificación" style="width : 390px; height : 15px" min="0" max="5"><br>
+        <input type="text" id="MessageScore" placeholder="Mensaje de la calificación" style="width : 390px; height : 15px"><br>
+        <input type="number" id="IdReserva" placeholder="Id de la Reserva" style="width : 390px; height : 15px"><br>
+
+    </form>
+
+    <button onclick="ReadScore()"style="width : 130px; height : 20px">Traer Calificaciones</button>
+    <button onclick="SaveScore()"style="width : 130px; height : 20px">Guardar Calificacion</button>
+    <button onclick="EditScore()"style="width : 130px; height : 20px">Actualizar Calificacion</button>
+
+    <div id = "ListaCalificacion"></div>
+
+    <hr>
+
+    <a href="/index.html">Volver al inicio</a>
+</body>
+</html>
